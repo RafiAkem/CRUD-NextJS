@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -268,4 +268,150 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.main input,
+.main textarea {
+  padding: 5px;
+}
+
+.main button {
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  padding: 5px;
+}
+
+.form button {
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.table button:last-child {
+  background-color: #ff0000;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardContent h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cardActions button {
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cardActions button:last-child {
+  background-color: #ff0000;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.articleImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
